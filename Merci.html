@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services Classiques - ZenKey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="index.html">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#2A4B7C',
+        secondary: '#B8860B'
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        DEFAULT: '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+        'full': '9999px',
+        'button': '8px'
+      }
+    }
+  }
+};
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Poppins', sans-serif; }
+</style>
+</head>
+<body class="bg-white">
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+<nav class="container mx-auto px-6 h-20 flex items-center justify-between">
+<a href="index.html" class="font-['Pacifico'] text-2xl text-primary">ZenKey</a>
+<div class="hidden lg:flex items-center gap-8">
+<a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Accueil</a>
+<a href="index.html#services" class="text-gray-700 hover:text-primary transition-colors">Prestations</a>
+<a href="index.html#esprit" class="text-gray-700 hover:text-primary transition-colors">Pourquoi nous</a>
+<a href="index.html#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+<a href="index.html#contact" class="!rounded-button bg-primary text-white px-6 py-2.5 hover:bg-secondary transition-colors whitespace-nowrap">
+  Demander un devis
+</a>
+
+</div>
+<button class="lg:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</nav>
+</header>
+<div class="min-h-screen flex items-center justify-center">
+    <div class="max-w-2xl mx-auto px-4 py-16 text-center">
+    <div class="bg-white rounded-2xl shadow-lg p-12 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-2 bg-primary"></div>
+    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-8">
+    <i class="ri-check-line text-4xl text-primary"></i>
+    </div>
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Merci pour votre message !</h1>
+    <p class="text-xl text-gray-600 mb-8">
+    Nous avons bien reçu votre demande et nous vous répondrons dans les plus brefs délais.
+    </p>
+    <div class="space-y-4 mb-12">
+    <div class="flex items-center justify-center space-x-2 text-gray-600">
+    <i class="ri-time-line"></i>
+    <p>Réponse sous 24 heures maximum</p>
+    </div>
+    <div class="flex items-center justify-center space-x-2 text-gray-600">
+    <i class="ri-customer-service-2-line"></i>
+    <p>Notre équipe est à votre écoute</p>
+    </div>
+    </div>
+    <a href="#index.html" class="inline-flex items-center justify-center px-6 py-3 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors duration-200">
+    <i class="ri-arrow-left-line mr-2"></i>
+    Retour à l'accueil
+    </a>
+    </div>
+    </div>
+    </div>
+</main>
+<footer class="bg-primary text-white py-16" id="footer">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div>
+        <a href="index.html" class="font-['Pacifico'] text-2xl block mb-6">ZenKey</a>
+        <p class="text-white/80">Services de conciergerie logistique à Paris et en Île-de-France</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Services</h3>
+        <ul class="space-y-2 text-white/80">
+          <li>Accueil des voyageurs</li>
+          <li>Service de ménage</li>
+          <li>Gestion du linge</li>
+          <li>Services sur mesure</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Contact</h3>
+        <ul class="space-y-2 text-white/80">
+          <li>contact@zenkey.fr</li>
+          <li>+33 1 23 45 67 89</li>
+          <li>Paris, France</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Suivez-nous</h3>
+        <div class="flex gap-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+            <i class="ri-linkedin-line"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/60 text-sm">
+      © 2025 ZenKey. Tous droits réservés.
+    </div>
+  </div>
+</footer>
+</body>
+</html> 
