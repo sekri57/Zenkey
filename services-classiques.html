@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services Classiques - ZenKey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="index.html">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#2A4B7C',
+        secondary: '#B8860B'
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        DEFAULT: '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+        'full': '9999px',
+        'button': '8px'
+      }
+    }
+  }
+};
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Poppins', sans-serif; }
+</style>
+</head>
+<body class="bg-white">
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+<nav class="container mx-auto px-6 h-20 flex items-center justify-between">
+<a href="index.html" class="font-['Pacifico'] text-2xl text-primary">ZenKey</a>
+<div class="hidden lg:flex items-center gap-8">
+<a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Accueil</a>
+<a href="index.html#services" class="text-gray-700 hover:text-primary transition-colors">Prestations</a>
+<a href="index.html#esprit" class="text-gray-700 hover:text-primary transition-colors">Pourquoi nous</a>
+<a href="index.html#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+<a href="index.html#contact" class="!rounded-button bg-primary text-white px-6 py-2.5 hover:bg-secondary transition-colors whitespace-nowrap">
+  Demander un devis
+</a>
+
+</div>
+<button class="lg:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</nav>
+</header>
+<!-- Bannière promo animée -->
+<div class="w-full bg-secondary py-2 mt-20 overflow-hidden relative">
+  <marquee class="text-white font-semibold text-lg tracking-wide animate-pulse">Promo : boîte à clé offerte gratuitement lors de l'inscription !</marquee>
+</div>
+<main class="pt-8 pb-20 min-h-screen bg-gray-50">
+  <section class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold text-primary mb-12 text-center">Services Classiques</h1>
+    <div class="space-y-12">
+      <!-- Carte 1 -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-shrink-0 flex flex-col items-center justify-center w-32">
+          <i class="ri-key-2-line text-5xl text-secondary mb-4"></i>
+          <img src="photos/ChatGPT Image Jul 23, 2025, 06_38_13 PM.png" alt="Gestion des clés" class="rounded-xl shadow w-full object-cover" style="max-height:90px;">
+        </div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-semibold text-primary mb-2">Gestion des clés & accès</h2>
+          <p class="mb-2">Une organisation fluide et sécurisée pour l’accueil des voyageurs.</p>
+          <ul class="list-disc ml-6 space-y-1 text-gray-700">
+            <li>Installation de boîtiers à code sécurisés (extérieurs ou connectés) <span class="text-green-600 font-semibold">(gratuit)</span></li>
+            <li>Gestion des accès autonomes pour les arrivées tardives</li>
+            <li>Remplacement rapide de clés perdues ou dysfonctionnelles</li>
+            <li>Conseil sur les meilleures solutions d’accès (boîte à clés, smart lock, badge)</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Carte 2 -->
+      <div class="bg-gray-100 rounded-2xl shadow-lg p-8 flex flex-col md:flex-row-reverse items-center gap-8">
+        <div class="flex-shrink-0 flex flex-col items-center justify-center w-32">
+          <i class="ri-brush-line text-5xl text-secondary mb-4"></i>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-semibold text-primary mb-2">🧽 Entretien & Maintenance</h2>
+          <p class="mb-2">Parce qu’un logement propre et fonctionnel est la base d’un bon séjour.</p>
+          <ul class="list-disc ml-6 space-y-1 text-gray-700">
+            <li>Nettoyage professionnel après chaque séjour</li>
+            <li>Contrôle visuel des installations (plomberie, chauffage, électricité)</li>
+            <li>Intervention rapide pour les petites réparations (poignée cassée, ampoule, rideau décroché…) <span class="text-yellow-600 font-semibold">(en option)</span></li>
+            <li>Suivi d’anomalies avec rapport photo/vidéo transmis au propriétaire</li>
+            <li>Coordination avec des artisans qualifiés en cas de besoin</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Carte 3 -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-shrink-0 flex flex-col items-center justify-center w-32">
+          <i class="ri-user-follow-line text-5xl text-secondary mb-4"></i>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-semibold text-primary mb-2">🕒 Check-in / Check-out sur mesure</h2>
+          <p class="mb-2">Un accueil humain ou autonome, selon votre besoin.</p>
+          <ul class="list-disc ml-6 space-y-1 text-gray-700">
+            <li>Présence physique pour un accueil personnalisé</li>
+            <li>Présentation du logement et consignes spécifiques</li>
+            <li>Envoi d’un rapport de fin de séjour au propriétaire</li>
+            <li>Check-out avec vérification du linge, état général et inventaire rapide</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Carte 6 -->
+      <div class="bg-gray-100 rounded-2xl shadow-lg p-8 flex flex-col md:flex-row-reverse items-center gap-8">
+        <div class="flex-shrink-0 flex flex-col items-center justify-center w-32">
+          <i class="ri-gift-line text-5xl text-secondary mb-4"></i>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-semibold text-primary mb-2">🛍️ Services + à la demande</h2>
+          <p class="mb-2">Des options pour aller plus loin.</p>
+          <ul class="list-disc ml-6 space-y-1 text-gray-700">
+            <li>Pack frigo plein / courses de bienvenue</li>
+            <li>Décoration saisonnière (Noël, printemps, Saint-Valentin)</li>
+            <li>QR Code digital avec toutes les infos du logement</li>
+            <li>Pack romantique / anniversaire</li>
+            <li>Réexpédition d’objets oubliés</li>
+          </ul>
+          <a href="index.html#contact" class="inline-block mt-4 bg-primary text-white px-6 py-2 rounded-button font-semibold shadow hover:bg-secondary transition-colors">Demander ce service</a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-16 text-gray-700 text-base border-t pt-8 text-center">
+      <p class="mb-2">💬 Tous nos services sont proposés sous contrat clair, sans engagement long terme, et dans le strict respect de la réglementation (pas de gestion locative ni d’encaissement).</p>
+      <p>Nous sommes votre partenaire terrain, discret, fiable et efficace.</p>
+      <a href="index.html#contact" class="inline-block mt-4 bg-primary text-white px-6 py-2 rounded-button font-semibold shadow hover:bg-secondary transition-colors">Demander ce service</a>
+
+    </div>
+  </section>
+</main>
+<footer class="bg-primary text-white py-16" id="footer">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div>
+        <a href="index.html" class="font-['Pacifico'] text-2xl block mb-6">ZenKey</a>
+        <p class="text-white/80">Services de conciergerie logistique à Paris et en Île-de-France</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Services</h3>
+        <ul class="space-y-2 text-white/80">
+          <li>Accueil des voyageurs</li>
+          <li>Service de ménage</li>
+          <li>Gestion du linge</li>
+          <li>Services sur mesure</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Contact</h3>
+        <ul class="space-y-2 text-white/80">
+          <li>contact@zenkey.fr</li>
+          <li>+33 1 23 45 67 89</li>
+          <li>Paris, France</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Suivez-nous</h3>
+        <div class="flex gap-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+            <i class="ri-linkedin-line"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/60 text-sm">
+      © 2025 ZenKey. Tous droits réservés.
+    </div>
+  </div>
+</footer>
+</body>
+</html> 

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZenKey - Services de conciergerie logistique à Paris</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#2A4B7C',
+        secondary: '#B8860B'
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        DEFAULT: '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+        'full': '9999px',
+        'button': '8px'
+      }
+    }
+  }
+};
+</script>
+<style>
+   scroll-behavior: smooth;
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Poppins', sans-serif; }
+/* Pour arrondir les coins du bloc contact à gauche et à droite */
+@media (min-width: 1024px) {
+.rounded-xl.lg\:rounded-r-none { border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important; }
+.rounded-xl.lg\:rounded-l-none { border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+}
+</style>
+</head>
+<body class="bg-white">
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+<nav class="container mx-auto px-6 h-20 flex items-center justify-between">
+<a href="#" class="font-['Pacifico'] text-2xl text-primary">ZenKey</a>
+<div class="hidden lg:flex items-center gap-8">
+<a href="#" class="text-gray-700 hover:text-primary transition-colors">Accueil</a>
+<a href="#services" class="text-gray-700 hover:text-primary transition-colors">Prestations</a>
+<a href="#esprit" class="text-gray-700 hover:text-primary transition-colors">Pourquoi nous</a>
+<a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+<a href="#contact" class="!rounded-button bg-primary text-white px-6 py-2.5 hover:bg-secondary transition-colors whitespace-nowrap">
+  Demander un devis
+  </a>
+</div>
+<button class="lg:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</nav>
+</header>
+<main class="pt-20">
+<section class="relative h-[600px] flex items-center" style="background-image: url('photos/ChatGPT Image Jul 23, 2025, 06_38_13 PM.png'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="container mx-auto px-6 relative">
+<div class="max-w-2xl">
+<h1 class="text-5xl font-bold text-white mb-6">Votre partenaire logistique à Paris</h1>
+<p class="text-xl text-white mb-8">Simplifiez la gestion de vos locations courte durée avec des services premium et personnalisés</p>
+<a href="index.html#services" class="!rounded-button bg-primary text-white px-8 py-3 text-lg hover:bg-secondary transition-colors whitespace-nowrap">
+  Découvrir nos services
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- Nos Services Section -->
+<section id="services" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Nos Services</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Une gamme complète de services adaptés à vos besoins
+      </p>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-12 mb-16">
+      <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full">
+            <i class="ri-service-line text-primary text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold">Services Classiques</h3>
+            <p class="text-gray-600">L'essentiel pour une gestion efficace</p>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full shrink-0">
+              <i class="ri-key-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Gestion des clés</h4>
+              <p class="text-gray-600">Remise et récupération sécurisée des clés, installation de boîtiers connectés</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full shrink-0">
+              <i class="ri-tools-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Entretien et maintenance</h4>
+              <p class="text-gray-600">Maintenance préventive et interventions techniques rapides</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full shrink-0">
+              <i class="ri-calendar-check-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Check-in / Check-out</h4>
+              <p class="text-gray-600">Gestion professionnelle des arrivées et départs</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full shrink-0">
+              <i class="ri-customer-service-2-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Assistance 24/7</h4>
+              <p class="text-gray-600">Support et dépannage disponible à tout moment</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8">
+          <a href="services-classiques.html" class="inline-block bg-primary text-white font-semibold px-8 py-3 rounded-button shadow hover:bg-secondary transition-colors text-lg">Découvrir tous les services classiques</a>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-sm relative">
+        <span class="absolute right-8 -top-5 bg-secondary text-white font-semibold px-6 py-2 rounded-full text-sm shadow-lg">Populaire</span>
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full">
+            <i class="ri-vip-crown-line text-secondary text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold">Services Premium</h3>
+            <p class="text-gray-600">Une expérience haut de gamme pour vos hôtes</p>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-secondary/5 rounded-full shrink-0">
+              <i class="ri-home-smile-line text-secondary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Nettoyage professionnel renforcé</h4>
+              <p class="text-gray-600">Service de ménage premium avec produits écologiques haut de gamme</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-secondary/5 rounded-full shrink-0">
+              <i class="ri-shirt-line text-secondary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Linge de maison hôtelier</h4>
+              <p class="text-gray-600">Draps, serviettes et peignoirs de qualité supérieure</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-secondary/5 rounded-full shrink-0">
+              <i class="ri-gift-line text-secondary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Panier d'accueil personnalisé</h4>
+              <p class="text-gray-600">Sélection de produits locaux, vin, café et fleurs fraîches</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-secondary/5 rounded-full shrink-0">
+              <i class="ri-music-2-line text-secondary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Ambiance personnalisée</h4>
+              <p class="text-gray-600">Musique d'ambiance, température idéale et éclairage adapté</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8">
+          <a href="services-prim.html" class="inline-block bg-primary text-white font-semibold px-8 py-3 rounded-button shadow hover:bg-secondary transition-colors text-lg">Découvrir tous les services premium</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Section suivante : L'esprit ZenKey -->
+<section id="esprit" class="py-20">
+<div class="container mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl font-bold text-gray-900 mb-6">L'esprit ZenKey</h2>
+<p class="text-gray-600 mb-8">Nous comprenons les défis de la location courte durée. Notre mission est de vous offrir des services logistiques d'excellence pour une gestion sans stress de vos biens à Paris.</p>
+<div class="grid gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full shrink-0">
+<i class="ri-shield-check-line text-primary text-xl"></i>
+</div>
+<div>
+<h3 class="font-semibold mb-2">Fiabilité garantie</h3>
+<p class="text-gray-600">Une équipe professionnelle disponible 7j/7 pour vos besoins</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full shrink-0">
+<i class="ri-customer-service-2-line text-primary text-xl"></i>
+</div>
+<div>
+<h3 class="font-semibold mb-2">Service personnalisé</h3>
+<p class="text-gray-600">Des solutions adaptées à vos exigences spécifiques</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full shrink-0">
+<i class="ri-timer-line text-primary text-xl"></i>
+</div>
+<div>
+<h3 class="font-semibold mb-2">Réactivité maximale</h3>
+<p class="text-gray-600">Une intervention rapide pour toutes vos demandes</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative h-[500px] rounded-lg overflow-hidden">
+<img src="photos/equipe-projet-start-up.png" class="w-full h-full object-cover" alt="L'équipe ZenKey" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<!-- Zone d'intervention (ajoutée) -->
+<section id="intervention" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        Zone d'intervention
+      </h2>
+      <p class="text-gray-600">
+        Nous intervenons dans toute l'Île-de-France
+      </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-sm p-8">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div
+          class="h-[500px] rounded-lg overflow-hidden"
+          style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"
+        ></div>
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-xl font-semibold text-primary mb-6">
+              Départements couverts
+            </h3>
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full shrink-0"
+                  >
+                    <i class="ri-map-pin-line text-primary"></i>
+                  </div>
+                  <h4 class="font-semibold">Paris (75)</h4>
+                </div>
+                <ul class="space-y-2 text-gray-600 ml-13">
+                  <li>Paris Centre (1er-4e)</li>
+                  <li>Paris Nord (9e, 10e, 18e, 19e)</li>
+                  <li>Paris Sud (5e, 6e, 7e, 13e, 14e, 15e)</li>
+                  <li>Paris Est (11e, 12e, 20e)</li>
+                  <li>Paris Ouest (8e, 16e, 17e)</li>
+                </ul>
+              </div>
+              <div class="space-y-6">
+                <div>
+                  <div class="flex items-center gap-3 mb-4">
+                    <div
+                      class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full shrink-0"
+                    >
+                      <i class="ri-map-pin-line text-primary"></i>
+                    </div>
+                    <h4 class="font-semibold">Petite Couronne</h4>
+                  </div>
+                  <ul class="space-y-2 text-gray-600 ml-13">
+                    <li>Hauts-de-Seine (92)</li>
+                    <li>Seine-Saint-Denis (93)</li>
+                    <li>Val-de-Marne (94)</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="flex items-center gap-3 mb-4">
+                    <div
+                      class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full shrink-0"
+                    >
+                      <i class="ri-map-pin-line text-primary"></i>
+                    </div>
+                    <h4 class="font-semibold">Grande Couronne</h4>
+                  </div>
+                  <ul class="space-y-2 text-gray-600 ml-13">
+                    <li>Seine-et-Marne (77)</li>
+                    <li>Yvelines (78)</li>
+                    <li>Essonne (91)</li>
+                    <li>Val-d'Oise (95)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary/5 rounded-lg p-6">
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full shrink-0"
+              >
+                <i
+                  class="ri-customer-service-2-line text-primary text-xl"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">
+                  Besoin de vérifier votre secteur ?
+                </h4>
+                <p class="text-gray-600 mb-4">
+                  Notre équipe est disponible pour confirmer notre
+                  présence dans votre zone
+                </p>
+                <button
+                  class="!rounded-button bg-primary text-white px-6 py-2.5 hover:bg-secondary transition-colors whitespace-nowrap"
+                >
+                  Nous contacter
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Contactez-nous -->
+<!-- Section Contactez-nous -->
+<section id="contact" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="grid lg:grid-cols-5 gap-0 rounded-2xl overflow-hidden shadow-sm bg-white">
+      <!-- Bloc gauche : infos contact -->
+      <div class="bg-primary text-white lg:col-span-2 p-10 flex flex-col justify-between rounded-xl lg:rounded-r-none">
+        <div>
+          <h2 class="text-3xl font-bold mb-8">Contactez-nous</h2>
+          <p class="text-white/80 mb-12">Notre équipe est à votre écoute pour répondre à toutes vos questions et vous accompagner dans vos projets</p>
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full shrink-0">
+                <i class="ri-map-pin-line text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-1">Adresse</h3>
+                <p class="text-white/80">75008 Paris, France</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full shrink-0">
+                <i class="ri-phone-line text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-1">Téléphone</h3>
+                <p class="text-white/80">+33 1 23 45 67 89</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full shrink-0">
+                <i class="ri-mail-line text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-1">Email</h3>
+                <p class="text-white/80">contact@zenkey.fr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12">
+          <h3 class="font-semibold mb-4">Suivez-nous</h3>
+          <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+              <i class="ri-linkedin-line"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+              <i class="ri-facebook-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloc droit : formulaire -->
+      <div class="lg:col-span-3 p-12">
+        <div class="max-w-lg">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-8">Envoyez-nous un message</h3>
+
+          <!-- Formulaire avec FormSubmit -->
+          <form action="https://formsubmit.co/contacte.zenkey@gmail.com" method="POST" class="space-y-6">
+            <!-- Remplace TON_EMAIL@example.com par ton adresse e-mail -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://tonsite.com/merci.html">
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Nom complet</label>
+                <input type="text" name="Nom complet" class="w-full px-4 py-3 bg-gray-50 border-none rounded-button focus:ring-2 focus:ring-primary/20 outline-none transition-colors" required>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                <input type="email" name="Email" class="w-full px-4 py-3 bg-gray-50 border-none rounded-button focus:ring-2 focus:ring-primary/20 outline-none transition-colors" required>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
+              <input type="tel" name="Téléphone" class="w-full px-4 py-3 bg-gray-50 border-none rounded-button focus:ring-2 focus:ring-primary/20 outline-none transition-colors" required>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Service souhaité</label>
+              <select name="Service souhaité" class="w-full px-4 py-3 bg-gray-50 border-none rounded-button focus:ring-2 focus:ring-primary/20 outline-none transition-colors appearance-none pr-10" required>
+                <option value="">Sélectionnez un service</option>
+                <option value="menage">Ménage entre séjours</option>
+                <option value="checkin">Check-in / Check-out</option>
+                <option value="linge">Location de linge</option>
+                <option value="assistance">Assistance technique</option>
+                <option value="equipement">Installation équipements</option>
+                <option value="photos">Shooting photos</option>
+                <option value="guide">Création guide d'accueil</option>
+                <option value="autre">Autre demande</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+              <textarea name="Message" rows="4" class="w-full px-4 py-3 bg-gray-50 border-none rounded-button focus:ring-2 focus:ring-primary/20 outline-none transition-colors resize-none" required></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="!rounded-button bg-primary text-white px-8 py-3 hover:bg-secondary transition-colors whitespace-nowrap w-full">
+                Envoyer le message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-primary text-white py-16">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div>
+        <a href="#" class="font-['Pacifico'] text-2xl block mb-6">ZenKey</a>
+        <p class="text-white/80">Services de conciergerie logistique à Paris et en Île-de-France</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Services</h3>
+        <ul class="space-y-2 text-white/80">
+          <li>Accueil des voyageurs</li>
+          <li>Service de ménage</li>
+          <li>Gestion du linge</li>
+          <li>Services sur mesure</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Contact</h3>
+        <ul class="space-y-2 text-white/80">
+          <li>contact@zenkey.fr</li>
+          <li>+33 1 23 45 67 89</li>
+          <li>Paris, France</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Suivez-nous</h3>
+        <div class="flex gap-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+            <i class="ri-linkedin-line"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white/10 transition-colors">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/60 text-sm">
+      © 2025 ZenKey. Tous droits réservés.
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
